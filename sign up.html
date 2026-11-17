@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+       background-image: url(img/coding\ 1.jpeg);
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+h1{
+    color: red;
+}
+.slider{
+    width: 400; 
+    height: 250;
+    margin: auto;
+    overflow: hidden;
+}
+.slides{
+    display: flex;
+    width: 2000px;
+animation: move 15s infinite;
+}
+.slides img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+  @keyframes move {
+    0%   { transform: translateX(0); }
+    20%  { transform: translateX(0); }
+
+    25%  { transform: translateX(-400px); }
+    40%  { transform: translateX(-400px); }
+
+    45%  { transform: translateX(-800px); }
+    60%  { transform: translateX(-800px); }
+
+    65%  { transform: translateX(-1200px); }
+    80%  { transform: translateX(-1200px); }
+
+    85%  { transform: translateX(-1600px); }
+    100% { transform: translateX(-1600px); }
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+}
+</style>
+<body>
+    <h1>ANGELA'S CODING HUB</h1>
+    <div class="slider">
+        <div class="slides">
+            <img src="img/coding 5.jpeg" alt="">
+            <img src="img/coding 7.jpeg" alt="">
+            <img src="img/coding 9.jpeg" alt="">
+            <img src="img/coding 2.jpeg" alt="">
+            
+        </div>
+    </div>
+    <header class="header">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About us.html">About us</a></li>
+             <li><a href="learn.html">Learn</a></li> 
+             <li><a href="our courses.html">Our Courses</a></li>
+              <li><a href="sign up.html">Sign up</a></li>
+        </ul>
+    </header>
+    <section>
+        <h1>WELLCOME TO ANGELA'S CODING HUB</h1>
+    </section>
+    <section>
+        <form action="">
+            <p><input type="text" id="first name" placeholder="first name" required></p>
+            <p><input type="text" id="surname" placeholder="surname" required></p>
+            <p><input type="date" id="date of birth" placeholder="dte of birth" required></p>
+            <p><input type="text" id="phonenumber" placeholder="phonenumber" required></p>
+            <p><input type="submit" id="submit" placeholder="submit" required></p>
+        </form>
+    </section>
+</body>
+</html>
